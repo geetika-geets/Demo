@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+<head> 
+<title>Smart Banner Demo</title>
+
+<script type="application/javascript">
+  // This is the actual SDK Loader - Do not change this part
+  !(function (e, n, t, a, o, s, r, i, c) {
+    var d = o + "_q"; (e[o] = e[o] || {}), (e[d] = e[d] || []);
+    for (var u = 0; u < s.length; u++) r(e[o], e[d], s[u]);
+    (i = n.createElement(t)), (c = n.getElementsByTagName(t)[0]), (i.async = !0),
+    (i.src = "https://cdn.adjust.com/adjust-smart-banner-latest.min.js"),
+    (i.onload = function () {
+      e[o] = e[o].default;
+      for (var n = 0; n < e[d].length; n++) e[o][e[d][n][0]] ? e[o][e[d][n][0]].apply(e[o], e[d][n][1]) : console.error("No function: " + e[d][n][0]);
+      e[d] = [];
+
+      // INITIALIZE THE SDK (Inside onload)
+      AdjustSmartBanner.init({
+        appToken: "t04z08zxta80", 
+        logLevel: "verbose"
+      });
+    }), c.parentNode.insertBefore(i, c);
+  })(window, document, "script", 0, "AdjustSmartBanner", ["init", "show", "hide"], function (e, n, t) {
+    e[t] = function () { n.push([t, arguments]); };
+  });
+</script>
+</head>
+
+<body>
+<h1> Adjust Smart Banner Demo</h1>
+<p> Welcome to Smart Banner Demo. Lets learn on actual Website.
+    <a href="https://help.adjust.com/en/article/smart-banners">
+    Check out smart banner details here!</a>
+</p>
+<h2>Learn Step by Step</h2>
+<ul>
+  <li> <a href="https://help.adjust.com/en/article/smart-banners-setup"> Set Up Smart banners </a> </li>
+  <li> <a href="https://help.adjust.com/en/article/manage-your-smart-banner-setup"> Manage Smart banner Set up </a> </li>
+  <li> <a href="https://help.adjust.com/en/article/smart-banners-reporting">Smart Banner Reporting </a> </li>
+  </ul>
